@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Codegrammer Blog",
+  "name": "Codegrammer Blog - a blog all about programming",
   "icons": [
     {
       "src": "favicon.ico",

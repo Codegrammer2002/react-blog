@@ -6,7 +6,7 @@ const Error404 = () =>{
 
     return (
         <div className="err">
-        <h1 > Sorry! We couln't find the page you'were looking for.</h1>
+        <h1 >Sorry! We couln't find the page you'were looking for.</h1>
         <p >Error 404: Couldn't fetch {location.pathname} </p> 
         <br />
  
