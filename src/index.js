@@ -2,7 +2,7 @@ import express, { application } from "express";
 import bodyParser from 'body-parser';
 import { MongoClient } from 'mongodb';
 import path from 'path';
-
+require("dotenv").config(); 
 const app = express();
 app.use(express.static(path.join(__dirname, '/build')))
 app.use(bodyParser.json());
@@ -71,5 +71,5 @@ app.get('*' , (req, res)=> {
     res.sendFile(path.join(__dirname + '/buidl/index.html'));
 
 })
-app.listen(8000, () => console.log('Listening on port 8000'));
+app.listen(process.env.PORT ||8000, () => console.log('Listening on port 8000'));
 
